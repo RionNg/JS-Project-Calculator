@@ -13,7 +13,7 @@ const calculate = {
     '-': (firstNumber, secondNumber) => firstNumber - secondNumber,
 
     '=': (firstNumber, secondNumber) => secondNumber
-};
+}
 
 let firstValue = 0;
 let operatorValue = '';
@@ -39,7 +39,7 @@ function addDecimal() {
     if (!calculatorDisplay.textContent.includes('.')) {
         calculatorDisplay.textContent = `${calculatorDisplay.textContent}.`;
     }
-};
+}
 
 function useOperator(operator) {
     const currentValue = Number(calculatorDisplay.textContent);
@@ -60,7 +60,7 @@ function useOperator(operator) {
     // Ready for the next value, store operator
     awaitingNextValue = true;
     operatorValue = operator;
-};
+}
 
 // Reset all values, display
 function resetAll() {
@@ -68,7 +68,7 @@ function resetAll() {
     operatorValue = '';
     awaitingNextValue = false;
     calculatorDisplay.textContent = '0';
-};
+}
 
 // Add Event Listeners for numbers, operators, and decimal buttons.
 inputBtns.forEach((inputBtn) => {
@@ -85,7 +85,7 @@ inputBtns.forEach((inputBtn) => {
             addDecimal()
         );
     }
-});
+})
 
 // Event Listener
 clearBtn.addEventListener('click', resetAll);
