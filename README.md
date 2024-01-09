@@ -1,6 +1,6 @@
 # Calculator
 
-A simple calculator web application created using HTML, CSS, and JavaScript.
+A simple calculator web application created using **HTML**, **CSS**, and **JavaScript**.
 
 ## Features
 - Addition, subtraction, multiplication, and division operations.
